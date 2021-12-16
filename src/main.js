@@ -2,20 +2,26 @@
 window.addEventListener('load', function () {
 
 	var game = new Phaser.Game({
-		width: 800,
-		height: 600,
-		type: Phaser.AUTO,
+		width: 1280,
+		height: 720,
+		type: Phaser.CANVAS,
 		backgroundColor: "#242424",
 		physics: {
-			default: 'arcade',
+			default: 'matter',
 			arcade: {
 				// gravity: { y: 0, x:0 },
 				debug: true
-			}
+			},
+			matter: {
+            gravity: {
+                x: 0,
+                y: 0
+            }
+        }
 		},
 		scale: {
-			mode: Phaser.Scale.FIT,
-			autoCenter: Phaser.Scale.CENTER_BOTH
+			mode: Phaser.Scale.ZOOM,
+			autoCenter: Phaser.Scale.FIT
 		},
 		dom: {
 			createContainer: true
@@ -32,6 +38,7 @@ class Boot extends Phaser.Scene {
 	preload() {
 
 		this.load.pack("pack", "assets/preload-asset-pack.json");
+		this.load.htmlTexture('key', './assets/gui/gui.html', 250,20);
 
 		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Preload"));
 	}

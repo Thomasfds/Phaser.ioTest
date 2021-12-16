@@ -2,35 +2,62 @@
     "id": "01aefa93-6044-4159-8358-7e91310aa05f",
     "sceneType": "SCENE",
     "settings": {
+        "snapWidth": 18,
+        "snapHeight": 18,
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
-        "sceneKey": "Level"
+        "sceneKey": "Level",
+        "borderWidth": 6000,
+        "borderHeight": 6000
     },
     "displayList": [
         {
             "type": "Image",
-            "id": "8642b8e8-9360-4ab7-9ffe-c1dca197b941",
-            "label": "background",
+            "id": "b3abc6ce-aa8e-424f-818a-447cd937c0fe",
+            "label": "background_1_1",
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "background"
+                "key": "background_1"
             },
-            "x": -297,
-            "y": 297
+            "x": 1500,
+            "y": 1500
         },
         {
             "type": "Image",
-            "id": "7d5827fd-34f6-473f-90e0-b9424a51d5fa",
-            "label": "dino",
-            "components": [
-                "PushOnClick"
-            ],
+            "id": "c216fa07-fd7d-45a8-9ced-d44fcbdf29cb",
+            "label": "background_1",
+            "scope": "CLASS",
+            "components": [],
             "texture": {
-                "key": "dino"
+                "key": "background_1"
             },
-            "x": 400,
-            "y": 218
+            "x": 4500,
+            "y": 1500
+        },
+        {
+            "type": "Image",
+            "id": "2dd8481a-bca0-40da-80af-c494c4dde520",
+            "label": "background_1_2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "background_1"
+            },
+            "x": 4500,
+            "y": 4500
+        },
+        {
+            "type": "Image",
+            "id": "1be8345d-b257-4bc8-bc3f-ef47e854f2c9",
+            "label": "background_1_2_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "background_1"
+            },
+            "x": 1500,
+            "y": 4500
         },
         {
             "type": "Text",
@@ -38,40 +65,155 @@
             "label": "text_1",
             "scope": "CLASS",
             "components": [],
-            "x": 590,
-            "y": 34,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "Phaser 3 + Phaser Editor 2D",
+            "x": 996,
+            "y": 21,
+            "text": "Actual Speed : 0",
             "fontFamily": "Arial",
             "fontSize": "30px"
         },
         {
-            "prefabId": "42c15927-b7f0-4b87-b808-7fd33f6c2cee",
-            "id": "e07ae845-d72a-4a4e-9fac-151b2b1f0430",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "ship105",
+            "type": "Image",
+            "id": "d26c39e6-0525-4d68-8e64-83886ffaf0ef",
+            "label": "planet_1",
             "scope": "CLASS",
             "components": [],
-            "x": 60,
-            "y": 57
+            "texture": {
+                "key": "planet_1"
+            },
+            "x": 149,
+            "y": 408,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "originX": 0.48033742283128683,
+            "originY": 0.45575920137039533
         },
         {
-            "type": "Text",
-            "id": "ea9f2497-3614-432f-af12-9d4990fd8810",
-            "label": "text_1_1",
+            "type": "Image",
+            "id": "b5beeff6-989b-4db0-9701-888302a052e0",
+            "label": "planet_1_1",
             "scope": "CLASS",
             "components": [],
-            "x": 590,
-            "y": 76,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "Phaser 3 + Phaser Editor 2D",
-            "fontFamily": "Arial",
-            "fontSize": "30px"
+            "texture": {
+                "key": "planet_1"
+            },
+            "x": 5541,
+            "y": 434,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "originX": 0.48033742283128683,
+            "originY": 0.45575920137039533
+        },
+        {
+            "type": "Image",
+            "id": "2f43796a-4774-4471-8447-76d209c85f52",
+            "label": "planet_1_1_1",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "planet_1"
+            },
+            "x": 706,
+            "y": 2088,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "originX": 0.48033742283128683,
+            "originY": 0.45575920137039533
+        },
+        {
+            "type": "Image",
+            "id": "557e6651-cfa8-4f6a-aff7-57b11d1dd163",
+            "label": "planet_1_1_2",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "planet_1"
+            },
+            "x": 4257.929018236395,
+            "y": 2469.665202291562,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "originX": 0.48033742283128683,
+            "originY": 0.45575920137039533
+        },
+        {
+            "type": "Image",
+            "id": "10ee5383-bc3a-4682-95e2-43694ba12b29",
+            "label": "planet_1_1_3",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "planet_1"
+            },
+            "x": 2656.8441158232195,
+            "y": 1313.9151733972824,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "originX": 0.48033742283128683,
+            "originY": 0.45575920137039533
+        },
+        {
+            "type": "Image",
+            "id": "82434b36-be03-4152-a77a-b7fd0d386238",
+            "label": "planet_1_1_4",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "planet_1"
+            },
+            "x": 1012.2360897639236,
+            "y": 3436.8734570659617,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "originX": 0.48033742283128683,
+            "originY": 0.45575920137039533
+        },
+        {
+            "type": "Image",
+            "id": "6d42fb4a-fca7-41b5-b9d8-76cf6afe3ed0",
+            "label": "planet_1_1_5",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "planet_1"
+            },
+            "x": 4374.205398214034,
+            "y": 4763.364748835393,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "originX": 0.48033742283128683,
+            "originY": 0.45575920137039533
+        },
+        {
+            "type": "Image",
+            "id": "883066b7-2015-4525-b02c-be3e30cd8291",
+            "label": "planet_1_1_6",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "planet_1"
+            },
+            "x": 1298.1178336797493,
+            "y": 5300.8224273971455,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "originX": 0.48033742283128683,
+            "originY": 0.45575920137039533
+        },
+        {
+            "type": "Image",
+            "id": "50bcac1a-4ae7-4c35-ab01-4a3d41222bf1",
+            "label": "planet_1_1_7",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "planet_1"
+            },
+            "x": 2716.0912835022446,
+            "y": 3322.5207594996314,
+            "scaleX": 1.5,
+            "scaleY": 1.5,
+            "originX": 0.48033742283128683,
+            "originY": 0.45575920137039533
         }
     ],
     "plainObjects": [],

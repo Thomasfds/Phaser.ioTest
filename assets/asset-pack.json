@@ -2,6 +2,11 @@
     "section1": {
         "files": [
             {
+                "url": "assets/2141792920.png",
+                "type": "image",
+                "key": "2141792920"
+            },
+            {
                 "url": "src/scenes/3540049.jpg",
                 "type": "image",
                 "key": "3540049"
@@ -10,6 +15,11 @@
                 "url": "src/scenes/background.jpg",
                 "type": "image",
                 "key": "background"
+            },
+            {
+                "url": "assets/background.png",
+                "type": "image",
+                "key": "background_1"
             },
             {
                 "url": [
@@ -24,6 +34,23 @@
                 "type": "image"
             },
             {
+                "url": "assets/gui/gui.html",
+                "type": "html",
+                "key": "gui"
+            },
+            {
+                "url": [
+                    "src/scenes/Movement.js"
+                ],
+                "type": "scripts",
+                "key": "Movement"
+            },
+            {
+                "url": "assets/planet_1.png",
+                "type": "image",
+                "key": "planet_1"
+            },
+            {
                 "url": [
                     "src/scenes/Player.js"
                 ],
@@ -36,6 +63,13 @@
                 ],
                 "type": "scripts",
                 "key": "PlayerBox"
+            },
+            {
+                "url": [
+                    "src/Utils/Players.js"
+                ],
+                "type": "scripts",
+                "key": "Players"
             },
             {
                 "url": "assets/ship105.png",
@@ -81,6 +115,11 @@
                 "url": "assets/ship132.png",
                 "type": "image",
                 "key": "ship132"
+            },
+            {
+                "url": "assets/scss/style.scss",
+                "type": "binary",
+                "key": "style"
             }
         ]
     },

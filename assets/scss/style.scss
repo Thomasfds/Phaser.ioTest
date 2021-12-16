@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-primary{
+    background: #05172494 !important;
+}
+
+
+#playerBox{
+    position: absolute;
+    /* width: 600px; */
+    left: 10px;
+    zoom: 400%;
+    /* height: 900px; */
+    top: 10px;
+
+    .card{
+        width: 300px;
+    }
+}

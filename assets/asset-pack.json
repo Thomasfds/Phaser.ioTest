@@ -1,0 +1,80 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "src/scenes/3540049.jpg",
+                "type": "image",
+                "key": "3540049"
+            },
+            {
+                "url": "src/scenes/background.jpg",
+                "type": "image",
+                "key": "background"
+            },
+            {
+                "url": "assets/dino.png",
+                "key": "dino",
+                "type": "image"
+            },
+            {
+                "url": [
+                    "src/scenes/Player.js"
+                ],
+                "type": "scripts",
+                "key": "Player"
+            },
+            {
+                "url": "assets/ship105.png",
+                "type": "image",
+                "key": "ship105"
+            },
+            {
+                "url": "assets/ship106.png",
+                "type": "image",
+                "key": "ship106"
+            },
+            {
+                "url": "assets/ship107.png",
+                "type": "image",
+                "key": "ship107"
+            },
+            {
+                "url": "assets/ship108.png",
+                "type": "image",
+                "key": "ship108"
+            },
+            {
+                "url": "assets/ship110.png",
+                "type": "image",
+                "key": "ship110"
+            },
+            {
+                "url": "assets/ship111.png",
+                "type": "image",
+                "key": "ship111"
+            },
+            {
+                "url": "assets/ship120.png",
+                "type": "image",
+                "key": "ship120"
+            },
+            {
+                "url": "assets/ship128.png",
+                "type": "image",
+                "key": "ship128"
+            },
+            {
+                "url": "assets/ship132.png",
+                "type": "image",
+                "key": "ship132"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "id": "42c15927-b7f0-4b87-b808-7fd33f6c2cee",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": ""
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "76220286-2899-4437-ae2f-e51eeecc2247",
+            "label": "ship105",
+            "components": [],
+            "texture": {
+                "key": "ship105"
+            }
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "prefabProperties": [
+        {
+            "name": "speedMin",
+            "label": "speedMin",
+            "tooltip": "speedMin",
+            "defValue": 50,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "SpeedInit",
+            "label": "SpeedInit",
+            "tooltip": "SpeedInit",
+            "defValue": 50,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "Booster",
+            "label": "Booster",
+            "tooltip": "Booster",
+            "defValue": 30,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "SpeedMax",
+            "label": "SpeedMax",
+            "tooltip": "SpeedMax",
+            "defValue": 100,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "ActualSpeed",
+            "label": "ActualSpeed",
+            "tooltip": "ActualSpeed",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
+}

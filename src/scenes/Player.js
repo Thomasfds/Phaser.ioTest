@@ -113,18 +113,18 @@ class Player extends Phaser.GameObjects.Image {
 		var pointer = this.scene.input.activePointer;
 
 		if (pointer.isDown) {
-			var angle = Phaser.Math.RAD_TO_DEG * Phaser.Math.Angle.Between(this.x, this.y, pointer.x, pointer.y);
+			var angle = Math.round(Phaser.Math.RAD_TO_DEG * Phaser.Math.Angle.Between(Math.round(this.x), Math.round(this.y), Math.round(pointer.x), Math.round(pointer.y)));
 			this.setAngle(angle);
 
+			console.log('This', Math.round(this.y))
+			console.log('Pointer', Math.round(pointer.y))
+
 			var p = this.scene.input.activePointer;
-			console.log()
-			if(this.ActualSpeed === 0){
+
+			if (this.ActualSpeed === 0) {
 				this.ActualSpeed = this.speedMin;
 			}
-			// this.ship105.ActualSpeed = this.ship105.speedMin;
-			// this.text_1.text = `Vitesse actuel ${this.ship105.ActualSpeed}`
 			this.scene.physics.moveToObject(this, p, this.ActualSpeed);
-			// this.updateSpeedUI(this.text_1)
 			this.scene.physics.resume()
 		} else {
 			this.scene.physics.pause()
@@ -132,6 +132,15 @@ class Player extends Phaser.GameObjects.Image {
 			// this.scene.physics.moveToObject(this, p, this.ActualSpeed);
 
 		}
+
+		this.on('gameobjectover', function (event) {
+			this.scene.physics.pause();
+			console.log('hover')
+		});
+
+
+		// console.log(this.input.cursor.)
+
 
 		if (this.keys.speedUp.isDown) {
 			if (this.ActualSpeed < this.SpeedMax) {
@@ -167,7 +176,7 @@ class Player extends Phaser.GameObjects.Image {
 	}
 
 	updateSpeedUI() {
-		return this.ActualSpeed;
+		return `Actual Speed : ${this.ActualSpeed}`;
 	}
 
 	/* END-USER-CODE */

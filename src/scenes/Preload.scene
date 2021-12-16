@@ -32,7 +32,23 @@
             ],
             "x": 400,
             "y": 349,
+            "originX": 0.5,
+            "originY": 0.5,
             "text": "0%",
+            "fontSize": "30px"
+        },
+        {
+            "type": "Text",
+            "id": "6758ebd2-6cfc-469a-b381-67b2c9332440",
+            "label": "text_1",
+            "scope": "CLASS",
+            "components": [],
+            "x": 433,
+            "y": 39,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Use your mouse for moving the ship (Right click)",
+            "fontFamily": "Arial",
             "fontSize": "30px"
         }
     ],
@@ -41,6 +57,6 @@
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
-        "version": 2
+        "version": 3
     }
 }

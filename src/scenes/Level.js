@@ -63,7 +63,12 @@ class Level extends Phaser.Scene {
 
 	create() {
 		this.editorCreate();
-		console.log(this.physics.world.enable(this.ship105, Phaser.Physics.ARCADE))
+		this.physics.world.enable(this.ship105, Phaser.Physics.ARCADE)
+		this.initGUI();
+
+		// const gui = new PlayerBox();
+		// this.initGui();
+		// gui.initGUI();
 
 	}
 
@@ -71,6 +76,8 @@ class Level extends Phaser.Scene {
 		this.ship105.initKeys();
 		this.ship105.movement();
 		this.updateSpeedUI(this.text_1);
+
+
 
 		// this.ship105.rotation = this.physics.arcade.angleToPointer(this.ship105);
 		// 		    var pointer = this.input.activePointer;
@@ -111,6 +118,20 @@ class Level extends Phaser.Scene {
 		// this.ship105.x += this.ship105.VitesseMove;
 	}
 
+	initGUI() {
+		console.log('gui')
+		const button = document.createElement('div');
+		let position = {
+			'x': 0,
+			'y': 0
+		};
+
+		button.ClassName = "btn btn-primary";
+		button.innerText = "Click Here";
+
+		this.add.dom(100, 100, button);
+
+	}
 
 	updateSpeedUI(object) {
 		object.text = this.ship105.updateSpeedUI();

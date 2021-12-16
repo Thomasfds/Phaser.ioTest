@@ -29,14 +29,26 @@ class Preload extends Phaser.Scene {
 
 		// progress
 		const progress = this.add.text(400, 349, "", {});
+		progress.setOrigin(0.5, 0.5);
 		progress.text = "0%";
 		progress.setStyle({ "fontSize": "30px" });
+
+		// text_1
+		const text_1 = this.add.text(433, 39, "", {});
+		text_1.setOrigin(0.5, 0.5);
+		text_1.text = "Use your mouse for moving the ship (Right click)";
+		text_1.setStyle({ "fontFamily": "Arial", "fontSize": "30px" });
 
 		// progress (components)
 		new PreloadText(progress);
 
+		this.text_1 = text_1;
+
 		this.events.emit("scene-awake");
 	}
+
+	/** @type {Phaser.GameObjects.Text} */
+	text_1;
 
 	/* START-USER-CODE */
 

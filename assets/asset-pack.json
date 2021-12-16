@@ -12,6 +12,13 @@
                 "key": "background"
             },
             {
+                "url": [
+                    "src/components/Component.js"
+                ],
+                "type": "scripts",
+                "key": "Component"
+            },
+            {
                 "url": "assets/dino.png",
                 "key": "dino",
                 "type": "image"
@@ -22,6 +29,13 @@
                 ],
                 "type": "scripts",
                 "key": "Player"
+            },
+            {
+                "url": [
+                    "src/components/PlayerBox.js"
+                ],
+                "type": "scripts",
+                "key": "PlayerBox"
             },
             {
                 "url": "assets/ship105.png",

@@ -142,7 +142,7 @@
                     "startFrame": 0,
                     "endFrame": -1,
                     "spacing": 0,
-                    "margin": 30
+                    "margin": 0
                 },
                 "type": "spritesheet",
                 "key": "solar_1_1"

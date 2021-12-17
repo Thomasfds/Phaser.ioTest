@@ -91,14 +91,17 @@ class Level extends Phaser.Scene {
 			repeatDelay: -1
 		});
 
-		this.plat = this.add.sprite(150, 200, 'platAn');
+		this.plat = this.matter.add.sprite(150, 200, 'platAn', null, { isStatic: true });
+		// this.plat.setStatic = true;
+		// this.plat.set
 
 		this.plat.setScale(2)
 		this.plat.play('turnPlat')
 
-		this.solar = this.add.sprite(150, 400, 'solar_1_1');
-		this.solar.setScale(2)
+		this.solar = this.matter.add.sprite(150, 400, 'solar_1_1', null, { isStatic: true });
+		this.solar.setScale(1.5)
 		this.solar.play('turnSolar')
+		this.ship.setCollisionGroup(1);
 
 
 

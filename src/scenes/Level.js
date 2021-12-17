@@ -32,74 +32,11 @@ class Level extends Phaser.Scene {
 		text_1.text = "Actual Speed : 0";
 		text_1.setStyle({ "fontFamily": "Arial", "fontSize": "30px" });
 
-		// planet_1
-		const planet_1 = this.add.image(149, 408, "planet_1");
-		planet_1.scaleX = 1.5;
-		planet_1.scaleY = 1.5;
-		planet_1.setOrigin(0.48033742283128683, 0.45575920137039533);
-
-		// planet_1_1
-		const planet_1_1 = this.add.image(5541, 434, "planet_1");
-		planet_1_1.scaleX = 1.5;
-		planet_1_1.scaleY = 1.5;
-		planet_1_1.setOrigin(0.48033742283128683, 0.45575920137039533);
-
-		// planet_1_1_1
-		const planet_1_1_1 = this.add.image(706, 2088, "planet_1");
-		planet_1_1_1.scaleX = 1.5;
-		planet_1_1_1.scaleY = 1.5;
-		planet_1_1_1.setOrigin(0.48033742283128683, 0.45575920137039533);
-
-		// planet_1_1_2
-		const planet_1_1_2 = this.add.image(4257.929018236395, 2469.665202291562, "planet_1");
-		planet_1_1_2.scaleX = 1.5;
-		planet_1_1_2.scaleY = 1.5;
-		planet_1_1_2.setOrigin(0.48033742283128683, 0.45575920137039533);
-
-		// planet_1_1_3
-		const planet_1_1_3 = this.add.image(2656.8441158232195, 1313.9151733972824, "planet_1");
-		planet_1_1_3.scaleX = 1.5;
-		planet_1_1_3.scaleY = 1.5;
-		planet_1_1_3.setOrigin(0.48033742283128683, 0.45575920137039533);
-
-		// planet_1_1_4
-		const planet_1_1_4 = this.add.image(1012.2360897639236, 3436.8734570659617, "planet_1");
-		planet_1_1_4.scaleX = 1.5;
-		planet_1_1_4.scaleY = 1.5;
-		planet_1_1_4.setOrigin(0.48033742283128683, 0.45575920137039533);
-
-		// planet_1_1_5
-		const planet_1_1_5 = this.add.image(4374.205398214034, 4763.364748835393, "planet_1");
-		planet_1_1_5.scaleX = 1.5;
-		planet_1_1_5.scaleY = 1.5;
-		planet_1_1_5.setOrigin(0.48033742283128683, 0.45575920137039533);
-
-		// planet_1_1_6
-		const planet_1_1_6 = this.add.image(1298.1178336797493, 5300.8224273971455, "planet_1");
-		planet_1_1_6.scaleX = 1.5;
-		planet_1_1_6.scaleY = 1.5;
-		planet_1_1_6.setOrigin(0.48033742283128683, 0.45575920137039533);
-
-		// planet_1_1_7
-		const planet_1_1_7 = this.add.image(2716.0912835022446, 3322.5207594996314, "planet_1");
-		planet_1_1_7.scaleX = 1.5;
-		planet_1_1_7.scaleY = 1.5;
-		planet_1_1_7.setOrigin(0.48033742283128683, 0.45575920137039533);
-
 		this.background_1_1 = background_1_1;
 		this.background_1 = background_1;
 		this.background_1_2 = background_1_2;
 		this.background_1_2_1 = background_1_2_1;
 		this.text_1 = text_1;
-		this.planet_1 = planet_1;
-		this.planet_1_1 = planet_1_1;
-		this.planet_1_1_1 = planet_1_1_1;
-		this.planet_1_1_2 = planet_1_1_2;
-		this.planet_1_1_3 = planet_1_1_3;
-		this.planet_1_1_4 = planet_1_1_4;
-		this.planet_1_1_5 = planet_1_1_5;
-		this.planet_1_1_6 = planet_1_1_6;
-		this.planet_1_1_7 = planet_1_1_7;
 
 		this.events.emit("scene-awake");
 	}
@@ -114,45 +51,85 @@ class Level extends Phaser.Scene {
 	background_1_2_1;
 	/** @type {Phaser.GameObjects.Text} */
 	text_1;
-	/** @type {Phaser.GameObjects.Image} */
-	planet_1;
-	/** @type {Phaser.GameObjects.Image} */
-	planet_1_1;
-	/** @type {Phaser.GameObjects.Image} */
-	planet_1_1_1;
-	/** @type {Phaser.GameObjects.Image} */
-	planet_1_1_2;
-	/** @type {Phaser.GameObjects.Image} */
-	planet_1_1_3;
-	/** @type {Phaser.GameObjects.Image} */
-	planet_1_1_4;
-	/** @type {Phaser.GameObjects.Image} */
-	planet_1_1_5;
-	/** @type {Phaser.GameObjects.Image} */
-	planet_1_1_6;
-	/** @type {Phaser.GameObjects.Image} */
-	planet_1_1_7;
 
 	/* START-USER-CODE */
 
 	// Write more your code here
 
+	preload() {
+		// this.load.spritesheet('solar_1_1', 'assets/spritesheet.png', { frameWidth: 500, frameHeight: 500 });
+
+	}
 
 	create() {
+		// this.physics.startSystem(Phaser.Physics.ARCADE);
+		// this.physics.systems.start;
+		// this.
+		// this.physics.world.enable(this.ship, Phaser.Physics.ARCADE)
+
 		this.initGUI();
 		this.editorCreate();
 		this.initPlayers();
 		this.matter.world.setBounds(0, 0, 6000, 6000);
 		this.cursors = this.input.keyboard.createCursorKeys();
+		this.planets = this.add.group();
+		// this.add.image(0, 0, 'platAn', '__BASE').setOrigin(0, 0);
 
-		const keys = this.input.keyboard.addKeys({
-			'up': Phaser.Input.Keyboard.KeyCodes.Z,
-			'down': Phaser.Input.Keyboard.KeyCodes.S,
-			'left': Phaser.Input.Keyboard.KeyCodes.Q,
-			'right': Phaser.Input.Keyboard.KeyCodes.D,
-			'speedUp': Phaser.Input.Keyboard.KeyCodes.SHIFT
+		this.anims.create({
+			key: 'turnPlat',
+			frames: this.anims.generateFrameNumbers('platAn', { start: 0, end: 9 }),
+			frameRate: 3,
+			repeat: -1,
+			repeatDelay: -1
 		});
-		this.keys = keys;
+
+		this.anims.create({
+			key: 'turnSolar',
+			frames: this.anims.generateFrameNumbers('solar_1_1', { start: 0, end: 8 }),
+			frameRate: 5.7,
+			repeat: -1,
+			repeatDelay: -1
+		});
+
+		this.plat = this.add.sprite(150, 200, 'platAn');
+
+		this.plat.setScale(2)
+		this.plat.play('turnPlat')
+
+		this.solar = this.add.sprite(150, 400, 'solar_1_1');
+		this.solar.setScale(2)
+		this.solar.play('turnSolar')
+
+
+
+
+		for (var i = 0; i < 15; i++) {
+			//  This creates a new Phaser.Sprite instance within the group
+			//  It will be randomly placed within the world and use the 'baddie' image to display
+			this.planets.create(Phaser.Math.RND.between(350, 3000), Phaser.Math.RND.between(350, 3000), 'planet_1');
+		}
+
+		// this.physics.world.enable(this.planet_1, Phaser.Physics.ARCADE);
+		// this.planet_1.body.collideWorldBounds = true;
+		// this.planet_1.body.collideWorldBounds = true;
+
+
+
+		// const keys = this.input.keyboard.addKeys({
+		// 	'up': Phaser.Input.Keyboard.KeyCodes.Z,
+		// 	'down': Phaser.Input.Keyboard.KeyCodes.S,
+		// 	'left': Phaser.Input.Keyboard.KeyCodes.Q,
+		// 	'right': Phaser.Input.Keyboard.KeyCodes.D,
+		// 	'speedUp': Phaser.Input.Keyboard.KeyCodes.SHIFT
+		// });
+		// this.keys = keys;
+		// this.movement.initMovement();
+		// this.planet_1.on('pointerdown', (pointer) => {
+		// 	console.log('ici', pointer)
+		// 	document.querySelector('playerBox').style = `left:${this.planet_1.x}`;
+		// })
+
+
 	}
 
 	update() {
@@ -165,7 +142,7 @@ class Level extends Phaser.Scene {
 		const playerInfo = new PlayersClass();
 		this.player = playerInfo;
 		// console.log('Oui',playerInfo.getTest());
-		this.ship = this.matter.add.image(200, 200, 'ship105');
+		this.ship = this.matter.add.image(300, 200, 'ship105');
 		this.ship.setFrictionAir(0.1);
 		this.ship.setMass(playerInfo.getMassDefault());
 		this.ship.setFixedRotation();
@@ -188,14 +165,14 @@ class Level extends Phaser.Scene {
 		interfaceStart.initInterface();
 	}
 
-	initMovement(){
-		
-	}
-
 	updateSpeedUI(object) {
 		object.text = this.player.getActualSpeed();
 		this.actualSpeedText.innerHTML = `Speed : ${this.player.getActualSpeed()}`;
 		// console.log('Update', this.ship105.updateSpeedUI())
+	}
+
+	randomIntFromInterval(min, max) { // min and max included 
+		return Math.floor(Math.random() * (max - min + 1) + min)
 	}
 
 	/* END-USER-CODE */

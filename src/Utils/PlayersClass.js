@@ -2,7 +2,7 @@ class PlayersClass {
   constructor() {
     this.name = name;
     this.actualSpeed = 0;
-    this.speedMin = 50;
+    this.speedMin = 300;
     this.booster = 30;
     this.massDefault = 1000 * 100;
     this.speedMax = 150;

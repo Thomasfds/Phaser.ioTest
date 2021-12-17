@@ -1,0 +1,10 @@
+{
+    "input": {
+        "up": "Phaser.Input.Keyboard.KeyCodes.Z",
+        "down": "S",
+        "left": "Q",
+        "right": "D",
+        "speed": "SHIFT",
+        "menu":"ESC"
+    }
+}

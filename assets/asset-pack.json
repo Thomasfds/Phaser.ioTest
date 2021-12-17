@@ -51,6 +51,19 @@
                 "key": "planet_1"
             },
             {
+                "url": "assets/platAn.png",
+                "frameConfig": {
+                    "frameWidth": 100,
+                    "frameHeight": 100,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "platAn"
+            },
+            {
                 "url": [
                     "src/scenes/Player.js"
                 ],
@@ -117,9 +130,60 @@
                 "key": "ship132"
             },
             {
+                "url": "assets/solar_1.gif",
+                "type": "image",
+                "key": "solar_1"
+            },
+            {
+                "url": "assets/solar_1.png",
+                "frameConfig": {
+                    "frameWidth": 200,
+                    "frameHeight": 200,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 30
+                },
+                "type": "spritesheet",
+                "key": "solar_1_1"
+            },
+            {
+                "url": "solarTEst.png",
+                "frameConfig": {
+                    "frameWidth": 512,
+                    "frameHeight": 200,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 250,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "solarTEst"
+            },
+            {
+                "url": "assets/spritesheet.png",
+                "frameConfig": {
+                    "frameWidth": 512,
+                    "frameHeight": 300,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 950
+                },
+                "type": "spritesheet",
+                "key": "spritesheet"
+            },
+            {
                 "url": "assets/scss/style.scss",
                 "type": "binary",
                 "key": "style"
+            },
+            {
+                "url": [
+                    "src/Utils/Utils.js"
+                ],
+                "type": "scripts",
+                "key": "Utils"
             }
         ]
     },

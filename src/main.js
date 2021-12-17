@@ -13,11 +13,12 @@ window.addEventListener('load', function () {
 				debug: true
 			},
 			matter: {
-            gravity: {
-                x: 0,
-                y: 0
-            }
-        }
+				debug:true,
+				gravity: {
+					x: 0,
+					y: 0
+				}
+			}
 		},
 		scale: {
 			mode: Phaser.Scale.ZOOM,
@@ -38,7 +39,7 @@ class Boot extends Phaser.Scene {
 	preload() {
 
 		this.load.pack("pack", "assets/preload-asset-pack.json");
-		this.load.htmlTexture('key', './assets/gui/gui.html', 250,20);
+		this.load.htmlTexture('key', './assets/gui/gui.html', 250, 20);
 
 		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Preload"));
 	}

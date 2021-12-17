@@ -139,6 +139,7 @@ class Level extends Phaser.Scene {
 
 
 	create() {
+		this.initGUI();
 		this.editorCreate();
 		this.initPlayers();
 		this.matter.world.setBounds(0, 0, 6000, 6000);
@@ -152,7 +153,6 @@ class Level extends Phaser.Scene {
 			'speedUp': Phaser.Input.Keyboard.KeyCodes.SHIFT
 		});
 		this.keys = keys;
-
 	}
 
 	update() {
@@ -184,18 +184,8 @@ class Level extends Phaser.Scene {
 	}
 
 	initGUI() {
-		console.log('gui')
-		const button = document.createElement('div');
-		let position = {
-			'x': 0,
-			'y': 0
-		};
-
-		button.ClassName = "btn btn-primary";
-		button.innerText = "Click Here";
-
-		this.add.dom(100, 100, button);
-
+		const interfaceStart = new Interface(this);
+		interfaceStart.initInterface();
 	}
 
 	initMovement(){

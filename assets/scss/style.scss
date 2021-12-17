@@ -16,20 +16,42 @@ body {
     padding: 0;
 }
 
-.bg-primary{
+.bg-primary {
     background: #05172494 !important;
 }
 
+.bg-secondary {
+    background: #329ef7a4 !important;
+}
 
-#playerBox{
+
+#playerBox {
     position: absolute;
     /* width: 600px; */
     left: 10px;
-    zoom: 400%;
+    zoom: 220%;
     /* height: 900px; */
     top: 10px;
 
-    .card{
+    .card {
         width: 300px;
+    }
+}
+
+
+#escMenu {
+    position: absolute;
+    /* width: 600px; */
+    // left: 10px;
+    zoom: 220%;
+    /* height: 900px; */
+    // top: 10px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .card {
+        width: 320px;
     }
 }

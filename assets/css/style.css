@@ -20,15 +20,33 @@ body {
   background: #05172494 !important;
 }
 
+.bg-secondary {
+  background: #329ef7a4 !important;
+}
+
 #playerBox {
   position: absolute;
   /* width: 600px; */
   left: 10px;
-  zoom: 400%;
+  zoom: 220%;
   /* height: 900px; */
   top: 10px;
 }
 
 #playerBox .card {
   width: 300px;
+}
+
+#escMenu {
+  position: absolute;
+  /* width: 600px; */
+  zoom: 220%;
+  /* height: 900px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#escMenu .card {
+  width: 320px;
 }

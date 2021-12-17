@@ -12,20 +12,37 @@
 
 	<script src="lib/phaser.min.js"></script>
 	<script src="src/Utils/PlayersClass.js"></script>
+	<script src="src/Utils/Interface.js"></script>
 	<script src="src/components/UserComponent.js"></script>
 	<script src="src/components/PushOnClick.js"></script>
 	<script src="src/components/PreloadText.js"></script>
 	<script src="src/scenes/Preload.js"></script>
 	<script src="src/scenes/Level.js"></script>
 	<script src="src/main.js"></script>
+	<script src="js/neutralino.js"></script>
+	<script src="js/main_neu.js"></script>
+
 </head>
 
 <body>
-	<section id="playerBox">
+	<section id="playerBox" class="d-none">
 		<div class="card bg-transparent">
 			<div class="card-body bg-primary text-white rounded">
 			  <p class="card-text mb-0">Name : Test</p>
 			  <p id="actualSpeed" class="card-text mb-0">Speed : Test</p>
+			</div>
+		  </div>
+	</section>
+
+	<section id="escMenu" class="d-none">
+		<div class="card bg-transparent">
+			<div class="card-header  bg-secondary text-white text-center">
+				Menu
+			</div>
+			<div class="card-body bg-primary text-white rounded">
+			  <button class="btn btn-sm btn-block btn-primary w-100 mb-3">Options</button>
+			  <button class="btn btn-sm btn-block btn-primary w-100 mb-3">Magework Studios</button>
+			  <button class="btn btn-sm btn-block btn-danger w-100 mb-3" type="button" id="quitApp">Exit</button>
 			</div>
 		  </div>
 	</section>

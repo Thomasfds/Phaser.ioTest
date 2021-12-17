@@ -7,7 +7,8 @@ class Movement extends Phaser.GameObjects.Image {
 			'down': Phaser.Input.Keyboard.KeyCodes.S,
 			'left': Phaser.Input.Keyboard.KeyCodes.Q,
 			'right': Phaser.Input.Keyboard.KeyCodes.D,
-			'speedUp': Phaser.Input.Keyboard.KeyCodes.SHIFT
+			'speedUp': Phaser.Input.Keyboard.KeyCodes.SHIFT,
+			'menu': Phaser.Input.Keyboard.KeyCodes.ESC,
 		});
 		this.player = player;
 		this.object = object;
@@ -66,6 +67,10 @@ class Movement extends Phaser.GameObjects.Image {
 				}
 			}
 
+		}
+
+		if(this.keys.menu.isDown){
+			
 		}
 	}
 }
